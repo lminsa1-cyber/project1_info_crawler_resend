@@ -310,32 +310,10 @@ with tab3:
             st.markdown("#### 💡 실무 가중치 키워드 빈도 분포")
             st.caption("뉴스 기사의 제목과 본문 요약에서 언급된 핵심 기술의 통계 분포입니다.")
             
-            # Matplotlib barh chart styled inside corporate navy/green colors
-            import matplotlib.pyplot as plt
-            fig, ax = plt.subplots(figsize=(6, 4))
-            
-            # Apply styling
-            fig.patch.set_facecolor('#ffffff')
-            ax.set_facecolor('#f8fafc')
-            
-            bars = ax.barh(chart_df["핵심 기술 테마"], chart_df["매칭 빈도수"], color='#0f172a', edgecolor='#10b981', height=0.6)
-            
-            # Add value labels
-            for bar in bars:
-                width = bar.get_width()
-                ax.text(width + 1, bar.get_y() + bar.get_height()/2, f'{int(width)}회', 
-                        va='center', ha='left', fontsize=9, color='#0f172a', fontweight='bold')
-                
-            ax.spines['top'].set_visible(False)
-            ax.spines['right'].set_visible(False)
-            ax.spines['bottom'].set_visible(False)
-            ax.spines['left'].set_color('#cbd5e1')
-            ax.tick_params(colors='#334155', labelsize=10)
-            
-            # Font family settings for Korean labels
-            plt.rcParams['font.family'] = 'Malgun Gothic'
-            
-            st.pyplot(fig)
+            # Matplotlib 대신 Streamlit의 네이티브 바 차트(st.bar_chart)를 사용하여
+            # 리눅스 클라우드 서버 환경에서의 한글 폰트 깨짐을 원천 방지하고 반응형으로 구현합니다.
+            chart_data = chart_df.set_index("핵심 기술 테마")
+            st.bar_chart(chart_data, color="#0f172a", height=320)
             
         with col_c2:
             st.markdown("#### 📁 매체 출처별 점유율")
