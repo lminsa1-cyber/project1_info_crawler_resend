@@ -1,0 +1,6 @@
+[2026-08-20 17:23:42] [ERROR] 수신자: student@gmail.com | 제목: [AI & Tech 리포트] 2026-08-20 핵심 IT 뉴스 20선 | 오류 내용: API key is invalid
+[2026-08-20 17:24:57] [ERROR] 수신자: student@gmail.com | 제목: [AI & Tech 리포트] 2026-08-20 핵심 IT 뉴스 20선 | 오류 내용: API key is invalid
+[2026-08-20 17:26:54] [ERROR] 수신자: student@gmail.com | 제목: [AI & Tech 리포트] 2026-08-20 핵심 IT 뉴스 20선 | 오류 내용: API key is invalid
+[2026-08-20 17:27:46] [ERROR] 수신자: ms_lee@gbsa.iceu.kr | 제목: [AI & Tech 리포트] 2026-08-20 핵심 IT 뉴스 20선 | 오류 내용: API key is invalid
+[2026-08-20 17:31:28] [ERROR] 수신자: ms_lee@gbsa.iceu.kr | 제목: [AI & Tech 리포트] 2026-08-20 핵심 IT 뉴스 20선 | 오류 내용: API key is invalid
+[2026-08-20 17:32:30] [ERROR] 수신자: ms_lee@gbsa.iceu.kr | 제목: [AI & Tech 리포트] 2026-08-20 핵심 IT 뉴스 20선 | 오류 내용: API key is invalid
